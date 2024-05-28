@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="707.0" prefWidth="925.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CafeManagmentFormContoller">
+   <children>
+      <Pane layoutY="1.0" prefHeight="919.0" prefWidth="1405.0">
+         <children>
+            <Pane layoutX="1.0" prefHeight="80.0" prefWidth="1382.0" style="-fx-background-color: #ebebeb;">
+               <children>
+                  <Label layoutX="14.0" prefHeight="80.0" prefWidth="225.0" text="Matara Cafe">
+                     <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TxtTime" layoutX="963.0" prefHeight="80.0" prefWidth="170.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TxtDate" layoutX="1139.0" prefHeight="80.0" prefWidth="237.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="80.0" prefHeight="695.0" prefWidth="993.0" style="-fx-border-color: #e6e6e6;" styleClass="bac">
+               <children>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="7.0" prefHeight="29.0" prefWidth="965.0" text="Menu Items" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Pane layoutX="14.0" layoutY="36.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName1" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="91.0" text="Cold Coffe">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.500.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p1" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image01" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="208.0" layoutY="36.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName2" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="136.0" text="Cappauccino Coffe">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.700.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner1" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p2" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox1" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image02" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="403.0" layoutY="36.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName3" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="127.0" text="Chocolate Coffe">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.600.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner5555" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p3" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox2" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image03" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="597.0" layoutY="36.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName4" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="91.0" text="Green Tea">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.400.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner12" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p4" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox3" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image04" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="792.0" layoutY="36.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName5" layoutX="60.0" layoutY="86.0" prefHeight="24.0" prefWidth="91.0" text="Water">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.100.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner13" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p5" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox4" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image05" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="255.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName6" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="127.0" text="Strawberry Cake">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.550.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner2" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p6" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox5" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image06" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="208.0" layoutY="255.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName7" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="127.0" text="Chocolate Cake">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.550.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner14" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p7" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox6" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image07" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="403.0" layoutY="255.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName8" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="117.0" text="Fruits Cake">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.400.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner111" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p8" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox7" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image08" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="597.0" layoutY="255.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName9" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="105.0" text="Rainbow Cake">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.500.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner121" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p9" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox8" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image09" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="792.0" layoutY="255.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName10" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="91.0" text="Coca Cola">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.150.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner131" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p10" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox9" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image10" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="474.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName11" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="117.0" text="Vegetarian Pizza">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.800.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner3" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p11" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox10" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image11" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="208.0" layoutY="474.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName12" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="127.0" text="Chicken Burger">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.750.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner15" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p12" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox11" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image12" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="403.0" layoutY="474.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName13" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="136.0" text="Chicken Noodles">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.800.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner112" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p13" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox12" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image13" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="597.0" layoutY="474.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName14" layoutX="60.0" layoutY="86.0" prefHeight="24.0" prefWidth="91.0" text="7 - UP">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.150.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner122" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p14" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox13" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image14" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="792.0" layoutY="474.0" prefHeight="207.0" prefWidth="187.0" style="-fx-border-color: #e6e6e6; -fx-background-color: #bdc3c7;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="111.0" prefHeight="17.0" prefWidth="41.0" text="Price:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="140.0" text="Quantity:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="176.0" text="Purches:">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemName15" layoutX="31.0" layoutY="86.0" prefHeight="24.0" prefWidth="99.0" text="Orange Juice">
+                           <font>
+                              <Font name="Tempus Sans ITC" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="85.0" layoutY="112.0" text="Rs.400.00">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="quantitySpinner132" editable="true" layoutX="85.0" layoutY="136.0" prefHeight="25.0" prefWidth="71.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Spinner>
+                        <CheckBox fx:id="p15" layoutX="83.0" layoutY="176.0" mnemonicParsing="false" onAction="#prchsCheckBox14" prefHeight="17.0" prefWidth="7.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></CheckBox>
+                        <Label fx:id="image15" prefHeight="86.0" prefWidth="187.0" />
+                     </children>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="789.0" prefHeight="106.0" prefWidth="993.0" style="-fx-background-color: #ecf0f1;">
+               <children>
+                  <Button fx:id="btnTotal" layoutX="25.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnTotalOnAction" prefHeight="48.0" prefWidth="117.0" style="-fx-background-color: #2ecc71;" text="Total" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="171.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnReceipt" prefHeight="48.0" prefWidth="117.0" style="-fx-background-color: #3498db;" text="Receipt" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="315.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnReset" prefHeight="48.0" prefWidth="117.0" style="-fx-background-color: #f1c40f;" text="Reset" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="461.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="48.0" prefWidth="117.0" style="-fx-background-color: #9b59b6;" text="Exit" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="1002.0" layoutY="80.0" prefHeight="814.0" prefWidth="383.0" style="-fx-background-color: #dfe4ea;">
+               <children>
+                  <TextArea fx:id="TextArea" layoutX="8.0" layoutY="8.0" prefHeight="659.0" prefWidth="367.0" />
+                  <TextField fx:id="serviceChargeField1" alignment="CENTER" editable="false" layoutX="205.0" layoutY="673.0" onAction="#serviceChargeField" prefHeight="36.0" prefWidth="170.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="subTotalField" alignment="CENTER" editable="false" layoutX="205.0" layoutY="718.0" prefHeight="36.0" prefWidth="170.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="totalField" alignment="CENTER" editable="false" layoutX="205.0" layoutY="764.0" prefHeight="36.0" prefWidth="170.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="14.0" layoutY="676.0" prefHeight="30.0" prefWidth="206.0" text="Service Charge (Rs.):">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="721.0" prefHeight="30.0" prefWidth="170.0" text="Sub Total (Rs.):">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="767.0" prefHeight="30.0" prefWidth="136.0" text="Total (Rs.):">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
