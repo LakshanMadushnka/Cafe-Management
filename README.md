@@ -1,7 +1,9 @@
 # ☕- Café Management System using javaFX
 
 ## Project Screenshot
-![Screenshot 2024-08-21 003653](https://github.com/user-attachments/assets/120fee1f-30ec-4c74-a22c-2fc5f151a2de)
+![Screenshot 2024-08-21 003653](https://github.com/user-attachments/assets/931ef27e-ad87-4547-8cfe-5e192c538fe9)
+![Screenshot 2024-08-21 005922](https://github.com/user-attachments/assets/44d777ce-ce87-4e21-9a26-d0950ea8a3dc)
+
 
 
 ## Table of Contents
