@@ -1,6 +1,6 @@
 # Café Management System
 
-#Project Screenshot
+## Project Screenshot
 ![Screenshot 2024-08-21 003653](https://github.com/user-attachments/assets/120fee1f-30ec-4c74-a22c-2fc5f151a2de)
 
 
@@ -33,7 +33,7 @@ Welcome to the **Café Management System**, a JavaFX-based application developed
 - **JavaFX**: For building the user interface.
 - **FXML**: For designing the layout.
 - **IntelliJ IDEA**: As the development environment.
-- **MySQL/MongoDB**: (if applicable) For database management.
+
 
 ## Installation
 
@@ -41,10 +41,5 @@ Welcome to the **Café Management System**, a JavaFX-based application developed
 
 - Java Development Kit (JDK) 8 or higher
 - IntelliJ IDEA or any Java-compatible IDE
-- MySQL/MongoDB (if applicable)
 
-### Steps
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/cafe-management-system.git
