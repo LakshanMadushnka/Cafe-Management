@@ -1,4 +1,4 @@
-# Café Management System
+# ☕- Café Management System 
 
 ## Project Screenshot
 ![Screenshot 2024-08-21 003653](https://github.com/user-attachments/assets/120fee1f-30ec-4c74-a22c-2fc5f151a2de)
